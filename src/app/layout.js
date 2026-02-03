@@ -1,6 +1,7 @@
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata = {
   title:
@@ -37,9 +38,11 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
+
         <NavBar />
         <div className="flex flex-col flex-[1_0_auto]">{children}</div>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );
